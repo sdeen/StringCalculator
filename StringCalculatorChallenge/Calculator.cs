@@ -12,7 +12,7 @@ namespace StringCalculatorChallenge
             try
             {
                 Regex pattern = new Regex(@"([a-zA-Z])");
-                var arrayNumber = number.Split(',');
+                var arrayNumber = number.Replace('\n', ',').Split(',');
                 //Step #1
                 if (string.IsNullOrEmpty(number))
                 {

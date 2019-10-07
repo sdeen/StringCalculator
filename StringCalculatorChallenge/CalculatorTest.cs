@@ -15,7 +15,7 @@ namespace StringCalculatorChallenge
         [TestCase("4,-3", 1)]
         [TestCase("", 0)]
         [TestCase("5,tytyt", 5)]
-        [TestCase("1,2,3,4,5,6,7,8,9,10,11,12", 78)]
+        [TestCase("1\n2,3", 6)]
         public void AddNumberTest(string num, int expectedValue)
         {
             Assert.AreEqual(expectedValue, Calculator.AddNumber(num));
