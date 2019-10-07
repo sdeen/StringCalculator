@@ -18,17 +18,10 @@ namespace StringCalculatorChallenge
                 number = Convert.ToString(Console.ReadLine());
                 int length = String.IsNullOrEmpty(number) ? 0 : number.Length;
                 int count = number.Count(c => c == ',');
-                if (count > 1)
-                {
-                    Console.WriteLine("Error:Input must be maximum 2 numbers using a comma delimiter");
-                }
-                else
-                {
-                    int result = Calculator.AddNumber(number);
-                    Console.WriteLine($"Result: {result}");
-                }
-
-
+                
+                int result = Calculator.AddNumber(number);
+                Console.WriteLine($"Result: {result}");
+                
                 Console.WriteLine("Enter quite to close the Calculator console. OR Enter to continue");
                 string input = Console.ReadLine();
                 if (input == "quite")
